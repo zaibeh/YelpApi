@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:id="@+id/restaurant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/restaurant_image"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Semilla Cafe" />
+
+    <ImageView
+        android:id="@+id/restaurant_image"
+        android:layout_width="133dp"
+        android:layout_height="134dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <RatingBar
+        android:id="@+id/restaurant_rate"
+        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/restaurant_addy"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_name" />
+
+    <TextView
+        android:id="@+id/restaurant_addy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/restaurant_category"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_rate"
+        tools:text="1283 Main St" />
+
+    <TextView
+        android:id="@+id/restaurant_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/restaurant_image"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_addy"
+        tools:text="Cafe" />
+
+    <TextView
+        android:id="@+id/restaurant_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/restaurant_rate"
+        app:layout_constraintStart_toEndOf="@+id/restaurant_rate"
+        app:layout_constraintTop_toTopOf="@+id/restaurant_rate"
+        tools:text="11 reviews" />
+
+    <TextView
+        android:id="@+id/restaurant_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="11.4 mi" />
+
+    <TextView
+        android:id="@+id/restaurant_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/restaurant_distance"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_distance"
+        tools:text="$$" />
+</androidx.constraintlayout.widget.ConstraintLayout>
