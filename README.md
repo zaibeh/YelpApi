@@ -1,4 +1,4 @@
-Homework 5 was the development of the Yelp application. It utilizes the Yelp API - in 
+This project is the development of the Yelp application. It utilizes the Yelp API - in 
 which we are able to extract data from to place inside the RecyclerView. The
 MainActivity is responsible for compiling the data from the RestaurantAdapter, 
 YelpData, and YelpInterface activities and placing them into the RecyclerView format.
